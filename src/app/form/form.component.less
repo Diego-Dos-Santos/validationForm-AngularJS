@@ -1,0 +1,123 @@
+/* HEADER */
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    /* FUENTES */
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: #ffff;
+    border-bottom: 1px solid #ccc;
+}
+
+.subheader {
+    text-align: center;
+}
+
+#logo {
+    width: 30%;
+    font-size: 30px;
+    float: left;
+    margin-top: 30px;
+}
+
+.center {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 70%;
+    float: right;
+}
+
+.menu ul {
+    margin-top: 40px;
+    line-height: 30px;
+    float: right;
+    width: 60%;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .8s ease, background-color .5s ease;
+}
+
+.menu a:hover:after {
+    width: 100%;
+    background: grey;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    transition: 300ms all;
+}
+
+.menu a:hover {
+    color: grey;
+}
+
+/* FIM HEADER */
+
+/* Formulario */
+
+.form-group {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.form-group input {
+    display: flex;
+    margin: 15px auto;
+    width: 40%;
+}
+
+textarea {
+    width: 40%;
+    min-height: 100px;
+    margin: 15px auto;
+}
+
+.radio {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radio input {
+    display: inline-block;
+    margin: 4px 20px;
+    width: initial;
+}
+
+.btn {
+    display: block;
+    width: 40%;
+    min-height: 40px;
+    color: white;
+    background: black;
+    margin: 15px auto;
+}
